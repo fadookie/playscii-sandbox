@@ -1,13 +1,32 @@
 {
  "objects": [
   {
+   "alpha": 1.0,
+   "animating": false,
+   "art_off_pct_x": 0.5,
+   "art_off_pct_y": 0.5,
+   "art_src": "default_player",
+   "class_name": "MyGamePlayer",
+   "facing": 2,
+   "locked": false,
+   "name": "MyGamePlayer_10d858dd8",
+   "scale_x": 1.0,
+   "scale_y": 1.0,
+   "state": "stand",
+   "visible": true,
+   "x": 0.791666666667389,
+   "y": 0.33333333333363535,
+   "y_sort": false,
+   "z": 0.0
+  },
+  {
    "bg_color_a": 0,
    "bg_color_b": 0,
    "bg_color_g": 0,
    "bg_color_r": 0,
-   "camera_x": 0,
-   "camera_y": 0,
-   "camera_z": 0,
+   "camera_x": 0.737308300110453,
+   "camera_y": 0.31044560004650457,
+   "camera_z": 15,
    "class_name": "WorldPropertiesObject",
    "collision_enabled": true,
    "draw_debug_objects": true,
@@ -25,6 +44,25 @@
    "show_bounds_all": false,
    "show_collision_all": false,
    "show_origin_all": false
+  },
+  {
+   "alpha": 1.0,
+   "animating": false,
+   "art_off_pct_x": 0.5,
+   "art_off_pct_y": 0.5,
+   "art_src": "game_object_default",
+   "class_name": "MyGameObject",
+   "facing": 2,
+   "locked": false,
+   "name": "MyGameObject_10d8584e0",
+   "scale_x": 1.0,
+   "scale_y": 1.0,
+   "state": "stand",
+   "visible": true,
+   "x": -7.804358343288572,
+   "y": 8.143778940048762,
+   "y_sort": false,
+   "z": 0.0
   }
  ]
 }
