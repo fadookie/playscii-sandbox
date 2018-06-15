@@ -7,6 +7,7 @@ class MyGamePlayer(Player):
     art_src = 'default_player'
     # no "move" state art, so just use stand state for now
     move_state = 'stand'
+    col_radius = 0.5
 
 
 class MyGameObject(StaticTileObject):
