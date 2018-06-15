@@ -5,8 +5,8 @@
    "bg_color_b": 0,
    "bg_color_g": 0,
    "bg_color_r": 0,
-   "camera_x": -39.12755156838763,
-   "camera_y": -10.573051364918229,
+   "camera_x": -39.47312970608717,
+   "camera_y": -7.504525075801684,
    "camera_z": 15,
    "class_name": "WorldPropertiesObject",
    "collision_enabled": true,
@@ -59,8 +59,8 @@
    "scale_y": 1.0,
    "state": "stand",
    "visible": true,
-   "x": -39.15485910046939,
-   "y": -10.543747073805743,
+   "x": -39.5,
+   "y": -7.5,
    "y_sort": false,
    "z": 0.0
   }
