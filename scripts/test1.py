@@ -1,20 +1,18 @@
-from game_util_objects import Player, StaticTileObject
-# from collision import CST_AABB
+from game_object import GameObject
+from art import TileIter
 
 
-class MyGamePlayer(Player):
-    "Generic starter player class for newly created games."
-    art_src = 'default_player'
-    # no "move" state art, so just use stand state for now
-    move_state = 'stand'
-    col_radius = 0.5
+class Canvas(GameObject):
+    generate_art = True
+    art_width, art_height = 54, 30  # approximately 16x9 aspect
 
+    def pre_first_update(self):
+        self.art.set_palette_by_name('gameboy')
 
-class MyGameObject(StaticTileObject):
-    "Generic starter object class for newly created games."
     def update(self):
-        # write "hello" in a color that shifts over time
-        color = self.art.palette.get_random_color_index()
-        self.art.write_string(0, 0, 3, 2, 'hello!', color)
-        # run parent class update
-        StaticTileObject.update(self)
+        for frame, layer, x, y in TileIter(self.art):
+            char = self.art.charset.last_index - 5
+            fg = self.art.palette.get_random_color_index()
+            bg = 3 % len(self.art.palette.colors)
+            self.art.set_tile_at(frame, layer, x, y, char, fg, bg)
+        GameObject.update(self)
